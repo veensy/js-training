@@ -9,6 +9,41 @@
  */
 
 // Your code :
+function multiply(param1,param2){
+
+let para = 0
+
+	let result = 0
+    
+    if (param1 == 0 || param2 == 0){
+            result = 0
+    }else if(param1 > 0 && param2 < 0){
+        para = -param2
+        for(let i=0;i<para;i++){
+            result=result+param1
+        }
+        result=-result
+    }else if(param1 < 0 && param2 > 0){
+        para = -param1
+        for(let i=0;i<param2;i++){
+            result=result+para
+        }
+        result=-result
+    }else if(param1 < 0 && param2 < 0){
+        param1 = -param1
+        param2 = -param2
+        for(let i=0;i<param2;i++){
+            result=result+param1
+        }       
+    }  
+     else{   
+	for(let i=0;i<param2;i++){
+
+		result=result+param1
+    }
+}
+	return result
+}
 
 //* Begin of tests
 const assert = require('assert')

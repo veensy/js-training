@@ -7,7 +7,13 @@
  * Of course you may not use the method directly
  *
  */
-
+function repeat ( param1,param2){
+	let result =''
+	for(let i =0;i<param2;i++){
+    result += param1 
+}
+	return result
+}
 //* Begin of tests
 const assert = require('assert')
 

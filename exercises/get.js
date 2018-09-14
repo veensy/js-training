@@ -13,9 +13,29 @@ const sourceObject = {
   bool: true,
   str: 'some text',
   log: console.log,
-}
+ }
 
 // Your code :
+ function get(param){
+  	switch (param) {
+	    case 'num':
+	        return sourceObject.num
+	        break;
+	    case 'bool':
+	        return sourceObject.bool
+	        break;
+	    case 'str':
+	        return sourceObject.str
+	        break;
+	    case 'log':
+	        return sourceObject.log
+	        break;
+	    default:
+	    return undefined
+	        break;
+}
+
+  }
 
 //* Begin of tests
 const assert = require('assert')

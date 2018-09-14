@@ -5,7 +5,14 @@
  * and return the total
  *
  */
-
+function total(total){
+	let sum = 0
+	for(let i=0;i<total.length;i++){
+		sum +=total[i]
+	}
+    return sum
+    console.log(sum)
+}	
 
 //* Begin of tests
 const assert = require('assert')

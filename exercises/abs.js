@@ -10,7 +10,14 @@
  */
 
 // Your code :
-
+function abs(param){
+	if (param < 0) {
+		return -param
+	}else{
+		return param
+	}
+	
+}
 //* Begin of tests
 const assert = require('assert')
 
