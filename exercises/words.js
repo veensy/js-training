@@ -5,7 +5,12 @@
  * and return an array of each words using space as a delimiter
  *
  */
+function words(words){
+	let reg = (' ')
 
+	return(words.split(reg))
+
+}
 
 //* Begin of tests
 const assert = require('assert')
